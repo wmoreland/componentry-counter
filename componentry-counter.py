@@ -3,7 +3,7 @@
 import sys
 from PyQt5.QtWidgets import (QWidget, QLabel, QLineEdit, QTextEdit,
                              QGridLayout, QApplication, QDesktopWidget,
-                             QPushButton, QShortcut)
+                             QPushButton, QShortcut, qApp, QAction)
 from PyQt5.QtGui import QIcon, QKeySequence
 
 
