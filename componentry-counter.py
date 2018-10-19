@@ -3,7 +3,11 @@
 import sys
 from PyQt5.QtWidgets import (QWidget, QLabel, QLineEdit, QTextEdit,
                              QGridLayout, QApplication, QDesktopWidget,
+<<<<<<< HEAD
                              QPushButton, QShortcut, qApp, QAction)
+=======
+                             QPushButton, QShortcut, qApp)
+>>>>>>> 8d229716d81f19cf7e1e06b2528bb9eade84a105
 from PyQt5.QtGui import QIcon, QKeySequence
 
 
@@ -16,6 +20,9 @@ class Example(QWidget):
 
 
     def initUI(self):
+        exit.setShortcut('Ctrl+Q')
+        exit.triggered.connect(qApp.quit)
+
         self.tb0 = QLineEdit('A')
         self.tb1 = QLineEdit('B')
         self.tb2 = QLineEdit('C')
